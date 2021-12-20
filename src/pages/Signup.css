@@ -1,0 +1,58 @@
+.formSignup {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  /* margin: auto; */
+  height: 700px;
+}
+
+.SignupTitle {
+  text-align: center;
+  margin-top: 0;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2em auto;
+  padding: 2em;
+  border: 3px solid rgb(223, 66, 26);
+  border-radius: 1em;
+}
+
+form label {
+  margin: 1em 0;
+  font-size: 1.3em;
+}
+
+form button {
+  padding: 1em;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(223, 66, 26);
+  border: 0.1em solid rgb(223, 66, 26);
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+form input {
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(232, 236, 236);
+}
+
+.formSignup .login {
+  margin: 1em auto;
+}
+
+.formSignup span {
+  color: rgb(223, 66, 26);
+  font-size: 1.3em;
+  cursor: pointer;
+}

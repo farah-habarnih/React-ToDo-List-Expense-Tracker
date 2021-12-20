@@ -1,0 +1,56 @@
+.ExpenseTracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ExpenseTracker .Title p {
+  margin-bottom: 1em;
+}
+
+.ExpenseTracker .Title {
+  margin: 1em;
+}
+
+.ExpenseTracker button {
+  background-color: rgb(223, 66, 26);
+  color: white;
+  padding: 0 0.1em;
+  font-size: 1em;
+  margin-left: 0.4em;
+  height: 4.6vh;
+}
+
+.ExpenseTracker input {
+  height: 4vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.btn-backto {
+  text-align: center;
+  /* margin-left: 700px; */
+  padding: 1em;
+  margin: auto 700px;
+  color: white;
+  background-color: rgb(223, 66, 26);
+  border: 0.1em solid rgb(223, 66, 26);
+  border-radius: 1em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-add {
+  text-align: center;
+  /* margin-left: 700px; */
+  padding: 1.5rem;
+  /* margin: auto 700px; */
+  color: white;
+  background-color: rgb(223, 66, 26);
+  border: 0.1em solid rgb(223, 66, 26);
+  border-radius: 0.5em;
+  cursor: pointer;
+}

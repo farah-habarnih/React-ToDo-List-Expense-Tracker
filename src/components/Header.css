@@ -1,0 +1,116 @@
+.header > img {
+  width: 70%;
+  height: 70%;
+  position: center;
+  margin-left: 218px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(223, 66, 26);
+}
+
+.header-title > h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.btn {
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  color: rgb(223, 66, 26);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a:link {
+  color: rgb(223, 66, 26);
+  text-decoration: none;
+}
+/* a:Link{
+        text-decoration: none;
+        color: white;
+      }  */
+a:visited {
+  text-decoration: none;
+  color: rgb(223, 66, 26);
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn-login {
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  color: rgb(223, 66, 26);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.btn-login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-login span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-login:hover span {
+  padding-right: 25px;
+}
+
+.btn-login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
