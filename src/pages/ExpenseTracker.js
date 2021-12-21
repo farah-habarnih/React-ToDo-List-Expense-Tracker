@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import List from "../components/List";
 import Navbar from "../components/Navbar";
 import "./ExpenseTracker.css";
 import { Link } from "react-router-dom";
 
 export default function ExpenseTracker() {
-  const [Text, setText] = useState();
-  const [number, setNumber] = useState("");
-  const [ItemList, setItemList] = useState([]);
-  const [Total, setTotal] = useState(0);
-  const [income, setIncome] = useState(0);
   const [Expense, setExpense] = useState(0);
+  const [income, setIncome] = useState(0);
+  const [Text, setText] = useState();
+  const [Total, setTotal] = useState(0);
+  const [ItemList, setItemList] = useState([]);
+  const [number, setNumber] = useState("");
 
   const AddItemList = () => {
     setItemList([...ItemList, { item: Text, key: Date.now(), number: number }]);
@@ -20,13 +20,9 @@ export default function ExpenseTracker() {
     } else {
       setExpense(number + Expense);
     }
-
     setTotal(Total + number);
-
     setText("");
     setNumber("");
-    console.log(ItemList);
-    console.log(number);
   };
 
   return (
@@ -34,10 +30,10 @@ export default function ExpenseTracker() {
       <Navbar />
       <h1>Expense Tracker </h1>
       <div className="ExpenseTracker">
+        <h2>Total Budget : {Total} JD</h2>
         <div className="Title">
-          <p>Total : {Total}.0 JD</p>
-          <p>Income : {income}.0 JD</p>
-          <p>Expense: {Expense}.0 JD</p>
+          <h3>Income : {income} JD</h3>
+          <h3>Expense: {Expense} JD</h3>
         </div>
 
         <div className="ExpenseTrackerList">
@@ -62,11 +58,11 @@ export default function ExpenseTracker() {
               }}
             />
           </label>
-          <button onClick={AddItemList} className="btn-add">
-            Add new Expense
-          </button>
           <List ItemList={ItemList} setItemList={setItemList} number={number} />
         </div>
+        <button onClick={AddItemList} className="btn-add">
+          Add new Expense
+        </button>
       </div>
       <button className="btn-backto">
         <Link to="/Tools">Back to Tools</Link>

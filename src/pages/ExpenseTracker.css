@@ -2,12 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
+  position: relative;
+  left: 500px;
+  border: 2px solid rgb(223, 66, 26);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
-.ExpenseTracker .Title p {
-  margin-bottom: 1em;
+.ExpenseTracker .Title h3 {
+  margin-left: 1em;
 }
 
+.Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .ExpenseTracker .Title {
   margin: 1em;
 }
@@ -34,8 +45,8 @@ h1 {
 .btn-backto {
   text-align: center;
   /* margin-left: 700px; */
-  padding: 1em;
-  margin: auto 700px;
+  padding: 1rem;
+  margin: auto 690px;
   color: white;
   background-color: rgb(223, 66, 26);
   border: 0.1em solid rgb(223, 66, 26);
@@ -53,4 +64,5 @@ h1 {
   border: 0.1em solid rgb(223, 66, 26);
   border-radius: 0.5em;
   cursor: pointer;
+  margin-bottom: 1rem;
 }

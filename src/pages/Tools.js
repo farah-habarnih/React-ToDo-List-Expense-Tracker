@@ -22,7 +22,7 @@ function Tools() {
           <img src="./Expense.jpg"></img>
           <h3>Expense Tracker</h3>
           <button className="btn-tools">
-            <Link to="/Expense-Tracker">Let's go</Link>
+            <Link to="/Expense-Tracker">Let's go </Link>
           </button>
         </div>
       </div>

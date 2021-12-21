@@ -16,7 +16,7 @@ export default function List(props) {
           <div className="Item">
             <span>{itemObj.item} </span>
             <span>{itemObj.number}</span>
-            <button onClick={() => deleteFromList(itemObj.key)}>X</button>
+            <button onClick={() => deleteFromList(itemObj.key)}>delete</button>
           </div>
         );
       })}
