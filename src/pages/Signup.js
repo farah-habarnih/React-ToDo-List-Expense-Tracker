@@ -82,7 +82,7 @@ class Signup extends React.Component {
 
             <button type="submit">Signup</button>
           </form>
-          {this.state.Signup == 1 ? (
+          {this.state.Signup === 1 ? (
             <button
               style={{
                 backgroundColor: "#DF4242",

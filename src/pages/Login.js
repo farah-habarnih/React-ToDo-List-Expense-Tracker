@@ -79,14 +79,14 @@ class Login extends React.Component {
             )}
             <button className="loginButton">Login</button>
           </form>
-          {this.state.Login == 1 ? (
+          {this.state.Login === 1 ? (
             <div>
               <h1 style={{ color: "black" }}> Welcome</h1>
             </div>
           ) : (
             ""
           )}
-          {this.state.Login == 1 ? (
+          {this.state.Login === 1 ? (
             <button
               style={{
                 backgroundColor: "#DF4242",

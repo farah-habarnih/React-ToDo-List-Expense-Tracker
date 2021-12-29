@@ -10,7 +10,7 @@ function Tools() {
       <h1> Management Tools </h1>
       <div className="tools">
         <div className="todo">
-          <img src="./Todo.png"></img>
+          <img src="./Todo.png" alt="Todo-List"></img>
           <h3>To Do List</h3>
           <button className="btn-tools">
             <span>
@@ -19,7 +19,7 @@ function Tools() {
           </button>
         </div>
         <div className="Expense">
-          <img src="./Expense.jpg"></img>
+          <img src="./Expense.jpg" alt="Expense-Tracker"></img>
           <h3>Expense Tracker</h3>
           <button className="btn-tools">
             <Link to="/Expense-Tracker">Let's go </Link>
